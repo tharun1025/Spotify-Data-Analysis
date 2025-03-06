@@ -1,4 +1,4 @@
-# Spotify Data Anlysis using MYSQL Projec
+# Spotify Data Anlysis using MYSQL Project
 
 ![Spotify Logo](https://github.com/najirh/najirh-Spotify-Data-Analysis-using-SQL/blob/main/spotify_logo.jpg)
 
