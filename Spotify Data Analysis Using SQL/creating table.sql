@@ -1,0 +1,37 @@
+-- Spotify Data Analysis
+
+-- create table
+
+DROP TABLE IF EXISTS spotify;
+CREATE TABLE spotify (
+    artist VARCHAR(255),
+    track VARCHAR(255),
+    album VARCHAR(255),
+    album_type VARCHAR(50),
+    danceability FLOAT,
+    energy FLOAT,
+    loudness FLOAT,
+    speechiness FLOAT,
+    acousticness FLOAT,
+    instrumentalness FLOAT,
+    liveness FLOAT,
+    valence FLOAT,
+    tempo FLOAT,
+    duration_min FLOAT,
+    title VARCHAR(255),
+    channel VARCHAR(255),
+    views FLOAT,
+    likes BIGINT,
+    comments BIGINT,
+    licensed int,
+    official_video int,
+    stream BIGINT,
+    energy_liveness FLOAT,
+    most_played_on VARCHAR(50)
+);
+
+ALTER TABLE spotify 
+MODIFY Licensed TINYINT, 
+MODIFY official_video TINYINT;
+
+SET GLOBAL max_allowed_packet = 1024*1024*256; -- 256MB
